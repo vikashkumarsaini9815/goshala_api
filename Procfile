@@ -1,0 +1,1 @@
+web: gunicorn goshala_api.wsgi
