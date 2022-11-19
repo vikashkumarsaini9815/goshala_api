@@ -7,9 +7,9 @@ from django.db import models
 class User(models.Model):
     name = models.CharField(max_length=255, null = True, blank = True)
     contact = models.CharField(max_length = 255, unique = True)
-    address= models.TextField(null=True, blank=True)
-    image = models.ImageField(null = True, blank = True)
-    message= models.TextField(null=True, blank=True)
+    donation_amount= models.IntegerField(null=True, blank=True)
+    image = models.ImageField(upload_to='profile_image', null = True, blank = True)
+
 
 
 
